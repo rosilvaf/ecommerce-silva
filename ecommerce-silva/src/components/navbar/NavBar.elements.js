@@ -14,7 +14,7 @@ export const NavBarContainer = styled.div`
 
   z-index: 99;
 
-  background-color: #ba2727;
+  background-color: #ffffff;
 
 `;
 
@@ -87,7 +87,7 @@ export const Menu = styled.ul`
 
 transition:0.5s all ease-in;
 
-background-color:#ba2727;
+background-color:#ffffff;
 
 }
 
@@ -115,7 +115,7 @@ export const MenuItem = styled.li`
 
   &:hover {
 
-    background-color: #8f4247;
+    background-color: #D6D9D0;
 
     border-bottom: 0.4rem solid;
 

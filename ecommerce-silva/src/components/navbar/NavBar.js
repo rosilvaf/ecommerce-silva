@@ -22,12 +22,11 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 import { AiFillGift } from "react-icons/ai";
 
+import CartWidget from './CartWidget';
 
+import ItemListContainer from "./ItemListContainer";
 
 const NavBar = () => {
-
-
-    
 
     const [click, setClick] = useState(false)
 
@@ -97,13 +96,15 @@ const NavBar = () => {
 
                         </MenuItem>
 
-
+                        <CartWidget />
 
                     </Menu>
 
                 </NavbarWrapper>
 
             </NavBarContainer>
+
+            <ItemListContainer></ItemListContainer>
 
         </>
 
