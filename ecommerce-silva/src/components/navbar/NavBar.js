@@ -104,8 +104,7 @@ const NavBar = () => {
 
             </NavBarContainer>
 
-            <ItemListContainer></ItemListContainer>
-
+            <ItemListContainer greeting="hola"/>
         </>
 
     );
