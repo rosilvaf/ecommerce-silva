@@ -26,6 +26,8 @@ import CartWidget from './CartWidget';
 
 import ItemListContainer from "./ItemListContainer";
 
+import ItemCount from "../ItemCount/ItemCount";
+
 const NavBar = () => {
 
     const [click, setClick] = useState(false)
@@ -36,6 +38,12 @@ const NavBar = () => {
 
         console.log(click)
 
+    }
+
+    const handleAdd = (count) =>{
+       
+        console.log(count)
+      
     }
 
     return (
@@ -105,6 +113,9 @@ const NavBar = () => {
             </NavBarContainer>
 
             <ItemListContainer greeting="hola"/>
+
+            <ItemCount stock={5} initial={1} onAdd = {handleAdd}></ItemCount>
+
         </>
 
     );
