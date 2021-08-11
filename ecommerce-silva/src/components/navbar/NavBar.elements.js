@@ -139,7 +139,7 @@ export const MenuItemLink = styled.a`
 
   text-decoration: none;
 
-  color: #00000;
+  color: black;
 
 `;
 
