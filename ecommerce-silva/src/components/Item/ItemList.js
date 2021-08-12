@@ -1,17 +1,6 @@
 import React from 'react';
-import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
+import Item from  './Item'
 
-const Item =({title,picture,price})=>{
-    return(
-        <Card>
-            <CardBody>
-                <CardTitle className="h5">{title}</CardTitle>
-                <CardImg className="h-5" src={picture}></CardImg>
-                <CardText>${price}</CardText>
-            </CardBody>
-        </Card>
-    )
-}
 const ItemList = ()=>{
     const items =[
         {

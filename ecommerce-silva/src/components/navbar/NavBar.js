@@ -22,9 +22,9 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 import { AiFillGift } from "react-icons/ai";
 
-import CartWidget from './CartWidget';
+import CartWidget from '../CartWidget/CartWidget';
 
-import ItemListContainer from "./ItemListContainer";
+import ItemListContainer from "../IteamListContainer/ItemListContainer";
 
 import ItemCount from "../ItemCount/ItemCount";
 
