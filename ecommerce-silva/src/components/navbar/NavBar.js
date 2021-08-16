@@ -114,6 +114,8 @@ const NavBar = () => {
 
             <ItemListContainer greeting="hola"/>
 
+            <ItemDetailContain></ItemDetailContain>
+
             <ItemCount stock={5} initial={1} onAdd = {handleAdd}></ItemCount>
 
         </>
