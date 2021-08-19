@@ -29,10 +29,6 @@ const ItemCount = ({ initial, stock, onAdd }) => {
     <>
       <Card>
         <CardBody>
-          <CardTitle tag="h5">Tiger Shirt</CardTitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">
-            Shirt
-          </CardSubtitle>
           <CardText>Add product to cart</CardText>
           <Card>
             <Container>

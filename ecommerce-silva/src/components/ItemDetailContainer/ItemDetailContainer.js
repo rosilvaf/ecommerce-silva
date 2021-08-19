@@ -1,5 +1,5 @@
 import { useEffect,useState } from "react";
-import ItemDetail from "./../ItemDetail/ItemDetail"
+import ItemDetail from "../ItemDetail/ItemDetail"
 
   const getItems= ()=>{
     return fetch('https://api.mercadolibre.com/sites/MLA/search?q=mesa')
