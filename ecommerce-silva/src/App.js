@@ -11,9 +11,11 @@ function App() {
       <div className="App">
         <NavBar></NavBar>
         <Switch>
-          <Route exact path="/" component={ItemListContainer}>
+          <Route exact path="/">
+            <ItemListContainer greeting="Welcome to the Ecommerce"></ItemListContainer>
           </Route>
-          <Route exact path="/Accesories" component={ItemDetailContainer}>
+          <Route exact path="/:category/:id">
+          <ItemDetailContainer greeting="Remarked Tables"></ItemDetailContainer>
           </Route>
         </Switch>
       </div>
@@ -22,8 +24,3 @@ function App() {
 }
 
 export default App;
-
- 
-
-export default App;
-

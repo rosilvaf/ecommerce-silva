@@ -22,11 +22,15 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 import { AiFillGift } from "react-icons/ai";
 
+import {Link} from 'react-router-dom';
+
 import CartWidget from '../CartWidget/CartWidget';
 
 import ItemListContainer from "../IteamListContainer/ItemListContainer";
 
 import ItemCount from "../ItemCount/ItemCount";
+import ItemList from "../Item/Item";
+import ItemDetailContain from "../ItemDetailContainer/ItemDetailContainer";
 
 const NavBar = () => {
 
@@ -74,50 +78,63 @@ const NavBar = () => {
 
                     <Menu click={click}>
 
-                        <MenuItem onClick={() => changeClick()}>
+                    <Link to="/">
+                    
+                    <MenuItem onClick={() => changeClick()}>
 
                             <MenuItemLink>Home</MenuItemLink>
 
                         </MenuItem>
+                    </Link>
 
-                        <MenuItem onClick={() => changeClick()}>
+                     <Link to="/Sale">  
+                     
+                      <MenuItem onClick={() => changeClick()}>
 
                             <MenuItemLink>Sale</MenuItemLink>
 
                         </MenuItem>
 
+                    </Link>
+
+                    <Link to="/clothes">
                         <MenuItem onClick={() => changeClick()}>
 
                             <MenuItemLink>Clothes</MenuItemLink>
 
                         </MenuItem>
-
+                    
+                    </Link>
+                    
+                    
+                        
                         <MenuItem>
 
-                            <MenuItemLink onClick={() => changeClick()}>Accesories</MenuItemLink>
+                        <Link to="/Accesories"><MenuItemLink onClick={() => changeClick()}>Accesories</MenuItemLink></Link>
 
                         </MenuItem>
-
+                        
+                    
+                    
+                    <Link to="/About">
+                        
                         <MenuItem>
 
                             <MenuItemLink onClick={() => changeClick()}>About us</MenuItemLink>
 
                         </MenuItem>
 
+                    </Link>
+
                         <CartWidget />
 
                     </Menu>
 
                 </NavbarWrapper>
+                
 
             </NavBarContainer>
-
-            <ItemListContainer greeting="hola"/>
-
-            <ItemDetailContain></ItemDetailContain>
-
-            <ItemCount stock={5} initial={1} onAdd = {handleAdd}></ItemCount>
-
+    
         </>
 
     );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import {
   Button,
   Card,
@@ -12,7 +12,7 @@ import {
 } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
-const ItemCount = ({ initial, stock, onAdd }) => {
+const ItemCount = ({ initial, stock, onAdd =()=>{}}) => {
   const [count, setInitial] = useState(initial);
   const handleRest = () => {
     if (count > 0) {
@@ -24,6 +24,10 @@ const ItemCount = ({ initial, stock, onAdd }) => {
       setInitial(count + 1);
     }
   };
+  useEffect(()=>{
+    onAdd(count)
+  },[count])
+  
 
   return (
     <>
@@ -45,7 +49,6 @@ const ItemCount = ({ initial, stock, onAdd }) => {
               </Row>
             </Container>
           </Card>
-          <Button onClick={() => onAdd(count)}>Add to Cart</Button>
         </CardBody>
       </Card>
     </>
